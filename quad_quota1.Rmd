@@ -5,8 +5,8 @@ date: "1/23/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE, message=F}
-knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning=FALSE)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
@@ -102,7 +102,9 @@ b <- -1*b_0
 
 # (1xn).(nxn)(nx1)-(1xn)(nx1) subject to :(mxn)(nx1) = (mx1) ≥ (mx1)
  
-solve.QP(D,d,t_A,b, meq=1)
+quad_run <- solve.QP(D,d,t_A,b, meq=1)
+quad_solution <- quad_run$solution
 
+quad_run
 ```
 
