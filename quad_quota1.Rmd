@@ -102,7 +102,7 @@ b <- -1*b_0
 
 # (1xn).(nxn)(nx1)-(1xn)(nx1) subject to :(mxn)(nx1) = (mx1) ≥ (mx1)
  
-solve.QP(D,d,t_A,b)
+solve.QP(D,d,t_A,b, meq=1)
 
 ```
 
