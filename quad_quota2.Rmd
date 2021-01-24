@@ -5,11 +5,11 @@ date: "1/23/2021"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+```{r setup, include=FALSE, message=F}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning=FALSE)
 ```
 
-```{r setup, include=FALSE}
+```{r}
 
 # Packages
 library(tidyverse)
